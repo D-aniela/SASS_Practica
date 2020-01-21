@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 95vw;
+  height: 20vh;
+  background: lightgrey;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: outset darkgrey;
+}
+
+#titulo {
+  color: black;
+  font-family: "Kalam";
+  font-size: 1in;
+  text-align: center;
+}
+
+#mente {
+  color: limegreen;
+  font-family: "Archivo Black";
+}
+
+#DivisionParr {
+  background: limegreen;
+  width: 90%;
+  height: 90vh;
+  margin: 0px 10px;
+  border: darkgrey outset;
+  position: absolute;
+}
+
+.parr1 {
+  color: white;
+  text-align: left;
+  width: 35%;
+}
+
+.parr2 {
+  color: white;
+  text-align: left;
+  text-align: justify;
+  width: 25%;
+}
+
+.parr3 {
+  color: white;
+  right: 30%;
+  width: 30%;
+  padding: px;
+  position: absolute;
+  top: 200px;
+}
+
+img {
+  width: 45vw;
+  height: 50vh;
+}
+
+aside {
+  width: 20%;
+  height: 90vh;
+  float: left;
+}
+
+/*# sourceMappingURL=style.css.map */
