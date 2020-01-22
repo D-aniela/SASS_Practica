@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Kalam&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -12,7 +13,7 @@ header {
   position: relative;
   text-align: center;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   border: outset darkgrey;
 }
 
@@ -30,17 +31,26 @@ header {
 
 #DivisionParr {
   background: limegreen;
-  width: 90%;
-  height: 90vh;
-  margin: 0px 10px;
+  width: 80%;
+  height: 80vh;
   border: darkgrey outset;
+  float: left;
+}
+
+img {
+  width: 50%;
+  height: 50%;
   position: absolute;
+  right: 25%;
+  top: 50%;
 }
 
 .parr1 {
   color: white;
   text-align: left;
   width: 35%;
+  font-family: "Montserrat";
+  font-size: 15px;
 }
 
 .parr2 {
@@ -48,6 +58,8 @@ header {
   text-align: left;
   text-align: justify;
   width: 25%;
+  font-family: "Montserrat";
+  font-size: 15px;
 }
 
 .parr3 {
@@ -57,17 +69,35 @@ header {
   padding: px;
   position: absolute;
   top: 200px;
+  font-family: "Montserrat";
+  font-size: 15px;
 }
 
-img {
-  width: 45vw;
-  height: 50vh;
+#ejemplo {
+  right: 40%;
+  width: 30%;
+  position: absolute;
+  font-size: 30px;
+  font-family: "Kalam";
+  top: 99%;
 }
 
 aside {
-  width: 20%;
-  height: 90vh;
+  width: 17%;
+  height: 70vh;
   float: left;
+  border: outset;
+}
+aside #cuadro1 {
+  background: limegreen;
+  width: 100%;
+  height: 15%;
+}
+aside #cuadro2 {
+  background: lightgray;
+  width: 100%;
+  height: 84%;
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
