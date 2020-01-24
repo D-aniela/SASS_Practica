@@ -19,7 +19,7 @@ body {
   position: relative;
   top: 100px;
   left: 220px;
-  animation: bounce ease-in-out 2s infinite;
+  animation: bounce ease-in-out 5s infinite;
 }
 
 @keyframes bounce {
@@ -29,19 +29,73 @@ body {
   }
   30% {
     height: 52px;
-    width: 15px;
+    width: 50px;
   }
   50% {
-    height: 30px;
-    width: 57px;
-    transform: translateY(550px);
+    height: 50px;
+    width: 65px;
+    transform: translateY(500px);
     margin-left: 20%;
   }
-  100% {
+  60% {
     height: 50px;
     width: 50px;
-    transform: translateY(0px);
+    margin-left: 30%;
+    transform: translateY(150px);
+  }
+  70% {
+    height: 50px;
+    width: 70px;
+    margin-left: 40%;
+    transform: translateY(500px);
+  }
+  80% {
+    height: 50px;
+    width: 50px;
+    margin-left: 50%;
+    transform: translateY(250px);
+  }
+  90% {
+    height: 50px;
+    width: 70px;
+    margin-left: 60%;
+    transform: translateY(500px);
+  }
+  92% {
+    height: 50px;
+    width: 50px;
+    margin-left: 65%;
+    transform: translateY(500px);
+  }
+  93% {
+    height: 50px;
+    width: 50px;
     margin-left: 70%;
+    transform: translateY(500px);
+  }
+  94% {
+    height: 50px;
+    width: 50px;
+    margin-left: 90%;
+    transform: translateY(450px);
+  }
+  95% {
+    height: 50px;
+    width: 50px;
+    margin-left: 80%;
+    transform: translateY(500px);
+  }
+  96% {
+    height: 50px;
+    width: 50px;
+    margin-left: 85%;
+    transform: translateY(460px);
+  }
+  97% {
+    height: 50px;
+    width: 50px;
+    margin-left: 90%;
+    transform: translateY(500px);
   }
 }
 
