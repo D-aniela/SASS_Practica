@@ -15,7 +15,7 @@ header {
   position: relative;
 }
 
-#titulo {
+.titulo {
   font-size: 80px;
   font-family: "Futura", sans-serif;
   position: absolute;
@@ -76,6 +76,34 @@ header {
   width: 98.5vw;
   height: 40vh;
   background: #e4e1e1;
+  position: relative;
+}
+
+#tituloimg {
+  top: -100%;
+  left: 70%;
+  font-family: "Futura";
+  font-size: 50px;
+  color: white;
+  position: relative;
+}
+
+#Revimg {
+  font-size: 25px;
+  top: -75%;
+  color: white;
+  font-size: 35px;
+  font-family: "Futura";
+  position: relative;
+  left: 70%;
+}
+
+#frasedig {
+  color: white;
+  top: -18%;
+  left: 2%;
+  font-family: "Futura";
+  position: relative;
 }
 
 #borde {
@@ -83,14 +111,13 @@ header {
   width: 96vw;
   height: 38vh;
   left: 1%;
-  top: 2%;
+  top: -200%;
   border: white solid 0.01cm;
 }
 
 .imgcontainer img {
-  position: absolute;
   width: 98vw;
-  height: 50%;
+  height: 100%;
   justify-content: center;
 }
 
@@ -309,8 +336,9 @@ img {
 
 #fbicon img {
   bottom: 40px;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
+  left: 2%;
   position: relative;
 }
 
