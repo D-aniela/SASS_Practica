@@ -1,0 +1,76 @@
+$Color1 : #18191f;
+$MedidaEnlaceGlobal : 50px;
+
+// declarando una lista
+$Colores: #00f3ff, #f00, #0f0;
+
+$Fila: 1,2,3;
+/*
+$ -> Caracter para indicar a SASS que se declarará una variable
+
+$****** -> En los asteriscos se escribirá el nombre de la variable
+    Características de las variables: 
+        1. No deben iniciar con un número
+        2. Son Casesensitive 
+        3. No puede ser solo números ni un número (Debe ser alfanumérico)
+        4. No puede haber dos variables con exactamente el mismo nombre
+        5. No puede haber espacios entre las variables, si se desea aplicar
+            espaciado se tiene que reemplazar por un "_"
+
+$Color1 : -> los dos puntos hacen referencia a que la variable será inicializada
+*/ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: $Color1;
+}
+
+ul{
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+
+    & > li{
+        list-style: none;
+
+        & a{
+            display: block;
+            width: $MedidaEnlaceGlobal;
+            height: $MedidaEnlaceGlobal;
+            background: $Color1;
+            text-align: center;
+            // Centrar verticalmente
+            line-height: $MedidaEnlaceGlobal;
+            margin: 0px 10px;
+            border-radius: 15px;
+            box-shadow: -2px -2px 3px rgba(255, 255, 255, 0.05), 
+            3px 3px 3px rgba(0, 0, 0, 0.2);
+
+            & .fa{
+                font-size: 22px;
+                color: #555;
+            }
+     }
+        }
+
+        // Ciclos
+        // each repite codigo por cada valor que se encuentre en una lista
+        @each $ValorFila in $Fila {
+        // #{$Variable} para que reconozca la sintaxis de la variable
+            &:nth-child(#{$ValorFila}) li a:hover .fa{
+                color: nth($Colores, $ValorFila);
+                text-shadow: 0 0 15px nth($Colores, $ValorFila);
+            }
+            
+        }
+}
