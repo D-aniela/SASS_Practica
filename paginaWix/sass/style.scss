@@ -1,0 +1,87 @@
+@import url(//db.onlinewebfonts.com/c/7fdb09ff5a96f39768f311d5471d68a9?family=FuturaLig);$width: 100%;
+@import url(//db.onlinewebfonts.com/c/0d78b12d6be09203d1fbeb76871a369a?family=Century+Gothic);
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: FuturaLig;
+}
+
+.menu-container{
+    background: #1E2D3B;
+    display: flex;
+    color: #fff;
+    
+    & img {
+        margin-left: 0px;
+        padding: 15px 5px;
+        background: #EDCD1F;
+    }
+    
+    & h3{
+        margin: 0;
+        padding: 20px 20px;
+        width: $width/6;
+        height: 50px;
+        background: #EDCD1F;
+        color: #1E2D3B;
+        font-size: 20px;
+        
+    }
+    
+    & div{
+        margin-left: 95px;
+        font-size: 14px;
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+    
+}
+
+
+.titulo{
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+
+}
+section{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    
+    & video {
+        object-fit: cover;
+        background: url("./../img/Gruas.mp4");
+    }
+    
+    & span {
+        font-size: 70px;
+        font-family: Century Gothic;
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        width: 60%;
+        padding: 100px;
+    }
+    & div {
+        margin: 0;
+        padding: 30%;
+        position: absolute;
+        & a{
+            display: block;
+            text-decoration: none;
+                
+            & .fa{
+                color: #fff;
+                font-size: 100px;
+            }
+        }   
+    }
+}
+

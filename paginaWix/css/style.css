@@ -1,0 +1,79 @@
+@import url(//db.onlinewebfonts.com/c/7fdb09ff5a96f39768f311d5471d68a9?family=FuturaLig);
+@import url(//db.onlinewebfonts.com/c/0d78b12d6be09203d1fbeb76871a369a?family=Century+Gothic);
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: FuturaLig;
+}
+
+.menu-container {
+  background: #1E2D3B;
+  display: flex;
+  color: #fff;
+}
+.menu-container img {
+  margin-left: 0px;
+  padding: 15px 5px;
+  background: #EDCD1F;
+}
+.menu-container h3 {
+  margin: 0;
+  padding: 20px 20px;
+  width: 16.6666666667%;
+  height: 50px;
+  background: #EDCD1F;
+  color: #1E2D3B;
+  font-size: 20px;
+}
+.menu-container div {
+  margin-left: 95px;
+  font-size: 14px;
+  margin-top: 50px;
+  margin-left: 10%;
+}
+
+.titulo {
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+section video {
+  object-fit: cover;
+  background: url("./../img/Gruas.mp4");
+}
+section span {
+  font-size: 70px;
+  font-family: Century Gothic;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  width: 60%;
+  padding: 100px;
+}
+section div {
+  margin: 0;
+  padding: 30%;
+  position: absolute;
+}
+section div a {
+  display: block;
+  text-decoration: none;
+}
+section div a .fa {
+  color: #fff;
+  font-size: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
