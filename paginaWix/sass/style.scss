@@ -1,5 +1,23 @@
-@import url(//db.onlinewebfonts.com/c/7fdb09ff5a96f39768f311d5471d68a9?family=FuturaLig);$width: 100%;
+@import url(//db.onlinewebfonts.com/c/7fdb09ff5a96f39768f311d5471d68a9?family=FuturaLig);
 @import url(//db.onlinewebfonts.com/c/0d78b12d6be09203d1fbeb76871a369a?family=Century+Gothic);
+@import url(//db.onlinewebfonts.com/c/162df29e3a8c08531d0b337dd64a1949?family=FF+Absara);
+@import url(//db.onlinewebfonts.com/c/1daa609fdca8da38e5bcbb12c2a987db?family=DINNextW01-Regular);
+
+// @use: './../mixins';
+
+$logo1: "FF Absara";
+$logo2: "DINNextW01-Regular";
+$logo3: "Helvetica";
+$width: 100%;
+$yellow: #EDCD1F;
+$Hsize: 50px;
+$Psize: 16pt;
+$gray: #F7F7F7;
+$gothicF: "Century Gothic";
+$futuraF: FuturaLig;
+$Pcolor: #3D5975;
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -7,7 +25,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    font-family: FuturaLig;
+    font-family: $futuraF;
 }
 
 .menu-container{
@@ -18,7 +36,7 @@ body{
     & img {
         margin-left: 0px;
         padding: 15px 5px;
-        background: #EDCD1F;
+        background: $yellow;
     }
     
     & h3{
@@ -26,7 +44,7 @@ body{
         padding: 20px 20px;
         width: $width/6;
         height: 50px;
-        background: #EDCD1F;
+        background: $yellow;
         color: #1E2D3B;
         font-size: 20px;
         
@@ -40,7 +58,6 @@ body{
     }
     
 }
-
 
 .titulo{
     margin: 0;
@@ -62,7 +79,7 @@ section{
     
     & span {
         font-size: 70px;
-        font-family: Century Gothic;
+        font-family: $gothicF;
         text-align: center;
         color: #fff;
         position: absolute;
@@ -85,3 +102,220 @@ section{
     }
 }
 
+
+.servicios{
+    h2{
+        color: #C6C6C6;
+        font-size: $Hsize;
+        font-family: $gothicF;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    & .linea {
+        width: 116px;
+        height: 10px;
+        background: $yellow;
+        margin-left: 45%;
+        margin-top: -45px;
+    }
+}
+    
+.serviciosFlex {
+    background: #fff;
+    display: flex;
+    height: 75vh;
+    width: $width/3;
+    padding: 40px 150px;
+
+    & div {
+        margin: 10px 10px;
+        background: #F7F7F7;
+        font-size: 14pt;     
+        margin: 20px;   
+        & h3{
+            color: $Pcolor;
+            font-size: $Psize;
+            font-family: $gothicF;
+            margin: 20px; 
+        }
+    }
+}
+
+.nosotrosFlex{
+    background: $gray;
+    display: flex;
+    position: relative;
+    height: 683px;
+
+    & #lineaN{
+        width: 116px;
+        height: 10px;
+        padding: 0 0;
+        background: $yellow;
+        margin-top: 100px;
+        margin-left: 100px;
+        position: absolute;
+    }
+
+    & h1{
+        font-size: $Hsize;
+        font-family: $gothicF;
+        position: absolute;
+        padding: 0 100px;
+        color: #C6C6C6;
+    }
+
+    & div {
+        font-size: $Psize;
+        padding: 200px 100px;
+    }
+
+    & img{
+        width: $width/2;
+        height: 683px;
+    }
+}
+.Estadistica{    
+
+    display: flex;
+    background: $yellow;
+    height: 40vh;
+    width: $width;
+    padding: 0 0px;
+
+    & .contenedorEstadistica{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        & > div {
+            width: 25%;
+            height: 75%;
+            margin: 0 5px;
+            position: relative;
+
+            & *{
+                position: absolute;
+            }
+
+            & span:nth-child(1){
+                display: block;
+                left: 50%;
+                transform: translate(-50%);
+                bottom: 50%;
+                font-size: $Hsize;
+                margin-bottom: 10px;
+                font-weight: bold;
+                color: #fff;
+                font-family: $gothicF;
+            }
+
+            & p{
+                display: block;
+                left: 50%;
+                transform: translate(-50%);
+                top: 35%;
+                text-align: center;
+                font-size: $Psize;
+                font-family: $gothicF;
+                color: $Pcolor;
+            }
+
+            & .LINEA {
+                border: 1px solid #fff;
+                width: 30%;
+                transform: rotate(90deg);
+                left: 80%;
+                display: block;
+                align-items: center;
+                top: 50%;
+            }
+        }
+    }
+}
+
+.proyectosFlex{
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+    width: $width;
+    justify-content: space-around;
+    
+    & .proyectosRow {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    & div {
+        position: relative;
+    }
+    
+    & img {
+        padding: 10px 10px;
+        &:hover{
+            opacity: 0.3;
+            transition: .5s;
+        }
+        
+    }
+    & span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: 0 180px;
+        font-size: $Psize;
+        font-family: $gothicF;
+        visibility: visible;
+        
+        &::after {
+            content: attr('data-text');
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+        }
+
+        &:hover{
+            visibility: hidden;
+            transition: 1s;
+        }
+    }
+}
+
+.logos{
+    display: flex;
+    background: pink;
+    height: 40vh;
+    width: $width;
+    padding: 0 0;
+    font-size: 20pt;
+
+    & .containerLogos {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+        & div {
+        width: 70%;
+        height: 25%;
+        margin: 0 10px;
+        position: relative;
+        background: #bbbbbb;
+    }
+
+    & span {
+        // display: block;
+        position: absolute;
+    }
+
+}

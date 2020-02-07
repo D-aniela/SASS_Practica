@@ -1,5 +1,7 @@
 @import url(//db.onlinewebfonts.com/c/7fdb09ff5a96f39768f311d5471d68a9?family=FuturaLig);
 @import url(//db.onlinewebfonts.com/c/0d78b12d6be09203d1fbeb76871a369a?family=Century+Gothic);
+@import url(//db.onlinewebfonts.com/c/162df29e3a8c08531d0b337dd64a1949?family=FF+Absara);
+@import url(//db.onlinewebfonts.com/c/1daa609fdca8da38e5bcbb12c2a987db?family=DINNextW01-Regular);
 html {
   scroll-behavior: smooth;
 }
@@ -55,7 +57,7 @@ section video {
 }
 section span {
   font-size: 70px;
-  font-family: Century Gothic;
+  font-family: "Century Gothic";
   text-align: center;
   color: #fff;
   position: absolute;
@@ -74,6 +76,198 @@ section div a {
 section div a .fa {
   color: #fff;
   font-size: 100px;
+}
+
+.servicios h2 {
+  color: #C6C6C6;
+  font-size: 50px;
+  font-family: "Century Gothic";
+  text-align: center;
+  padding: 10px 0px;
+}
+.servicios .linea {
+  width: 116px;
+  height: 10px;
+  background: #EDCD1F;
+  margin-left: 45%;
+  margin-top: -45px;
+}
+
+.serviciosFlex {
+  background: #fff;
+  display: flex;
+  height: 75vh;
+  width: 33.3333333333%;
+  padding: 40px 150px;
+}
+.serviciosFlex div {
+  margin: 10px 10px;
+  background: #F7F7F7;
+  font-size: 14pt;
+  margin: 20px;
+}
+.serviciosFlex div h3 {
+  color: #3D5975;
+  font-size: 16pt;
+  font-family: "Century Gothic";
+  margin: 20px;
+}
+
+.nosotrosFlex {
+  background: #F7F7F7;
+  display: flex;
+  position: relative;
+  height: 683px;
+}
+.nosotrosFlex #lineaN {
+  width: 116px;
+  height: 10px;
+  padding: 0 0;
+  background: #EDCD1F;
+  margin-top: 100px;
+  margin-left: 100px;
+  position: absolute;
+}
+.nosotrosFlex h1 {
+  font-size: 50px;
+  font-family: "Century Gothic";
+  position: absolute;
+  padding: 0 100px;
+  color: #C6C6C6;
+}
+.nosotrosFlex div {
+  font-size: 16pt;
+  padding: 200px 100px;
+}
+.nosotrosFlex img {
+  width: 50%;
+  height: 683px;
+}
+
+.Estadistica {
+  display: flex;
+  background: #EDCD1F;
+  height: 40vh;
+  width: 100%;
+  padding: 0 0px;
+}
+.Estadistica .contenedorEstadistica {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Estadistica .contenedorEstadistica > div {
+  width: 25%;
+  height: 75%;
+  margin: 0 5px;
+  position: relative;
+}
+.Estadistica .contenedorEstadistica > div * {
+  position: absolute;
+}
+.Estadistica .contenedorEstadistica > div span:nth-child(1) {
+  display: block;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 50%;
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Century Gothic";
+}
+.Estadistica .contenedorEstadistica > div p {
+  display: block;
+  left: 50%;
+  transform: translate(-50%);
+  top: 35%;
+  text-align: center;
+  font-size: 16pt;
+  font-family: "Century Gothic";
+  color: #3D5975;
+}
+.Estadistica .contenedorEstadistica > div .LINEA {
+  border: 1px solid #fff;
+  width: 30%;
+  transform: rotate(90deg);
+  left: 80%;
+  display: block;
+  align-items: center;
+  top: 50%;
+}
+
+.proyectosFlex {
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  width: 100%;
+  justify-content: space-around;
+}
+.proyectosFlex .proyectosRow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.proyectosFlex div {
+  position: relative;
+}
+.proyectosFlex img {
+  padding: 10px 10px;
+}
+.proyectosFlex img:hover {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+.proyectosFlex span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 180px;
+  font-size: 16pt;
+  font-family: "Century Gothic";
+  visibility: visible;
+}
+.proyectosFlex span::after {
+  content: attr("data-text");
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.proyectosFlex span:hover {
+  visibility: hidden;
+  transition: 1s;
+}
+
+.logos {
+  display: flex;
+  background: pink;
+  height: 40vh;
+  width: 100%;
+  padding: 0 0;
+  font-size: 20pt;
+}
+.logos .containerLogos {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logos div {
+  width: 70%;
+  height: 25%;
+  margin: 0 10px;
+  position: relative;
+  background: #bbbbbb;
+}
+.logos span {
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
