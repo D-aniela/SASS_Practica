@@ -1,7 +1,3 @@
-@mixin fuentes($color1, $color2, $color3){
-    background: $color1;
-    color: $color2, $color3,
-    div{
-        font-size: $size1, $size2;
-    }
+@mixin fuentes($color1, $color2){
+    color: $color1, $color2;
 }

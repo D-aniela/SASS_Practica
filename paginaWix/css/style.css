@@ -244,30 +244,173 @@ section div a .fa {
   transition: 1s;
 }
 
+.clientes {
+  background: #F7F7F7;
+  padding: 5px;
+}
+
 .logos {
   display: flex;
-  background: pink;
-  height: 40vh;
+  background: #F7F7F7;
+  height: 20vh;
   width: 100%;
   padding: 0 0;
   font-size: 20pt;
 }
 .logos .containerLogos {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .logos div {
-  width: 70%;
-  height: 25%;
-  margin: 0 10px;
+  width: 100%;
+  height: 100%;
+  margin: 0 100px;
   position: relative;
-  background: #bbbbbb;
+  font-family: FuturaLig;
+  font-size: 25pt;
 }
-.logos span {
+.logos div:nth-child(1) {
+  font-family: "FF Absara";
+  color: #F7F7F7, #EDCD1F;
+}
+.logos div:nth-child(2) {
+  color: #F7F7F7, green;
+  font-family: "DINNextW01-Regular";
+}
+.logos div:nth-child(3) {
+  color: #F7F7F7, blue;
+  font-family: "Helvetica";
+  font-weight: bolder;
+}
+.logos div:nth-child(4) {
+  color: #F7F7F7, purple;
+}
+.logos div:nth-child(5) {
+  color: #F7F7F7, #EDCD1F;
+  bottom: -2%;
+  font-size: 14pt;
+}
+.logos div span {
+  display: block;
   position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+  right: 50%;
+}
+.logos div span:hover {
+  color: #EDCD1F;
+}
+.logos div a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 70%;
+  font-size: 15pt;
+}
+.logos div a:nth-child(1) {
+  color: grey;
+}
+.logos div a:nth-child(2) {
+  color: grey;
+  transform: translateY(-80%);
+}
+.logos div a:hover {
+  color: red;
+}
+
+.mapa {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+}
+.mapa iframe {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 50px;
+}
+
+.preguntas {
+  position: relative;
+  font-family: Arial;
+  display: flex;
+  width: 80%;
+  left: 10%;
+}
+.preguntas span {
+  position: absolute;
+  font-size: 18pt;
+  font-weight: bold;
+  color: #3D5975;
+  width: 80vw;
+}
+.preguntas p {
+  position: absolute;
+  font-family: FuturaLig;
+  font-size: 16pt;
+  top: 30px;
+  width: 40%;
+}
+.preguntas input {
+  position: relative;
+  margin: 2px;
+  top: 200px;
+  padding: 5px 5px;
+  width: 35vw;
+  background: #F7F7F7;
+  border: none;
+  height: 20px;
+}
+.preguntas #Mensaje {
+  height: 18vh;
+}
+.preguntas .oficina {
+  position: absolute;
+  width: 100%;
+  left: 60%;
+}
+.preguntas .oficina span {
+  top: 10px;
+}
+.preguntas .oficina p {
+  position: relative;
+  top: 30px;
+  width: 18%;
+  font-size: 14pt;
+}
+.preguntas .oficina .empleos {
+  position: absolute;
+  top: 200px;
+}
+.preguntas .oficina .empleos p {
+  width: 40%;
+}
+.preguntas .oficina .linea3 {
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  top: 150px;
+  background: #EDCD1F;
+}
+.preguntas .oficina .presupuesto {
+  position: absolute;
+  font-size: 20pt;
+  top: 160px;
+}
+.preguntas .oficina .presupuesto span {
+  width: 25vw;
+}
+
+footer {
+  position: relative;
+}
+footer p {
+  position: absolute;
+  top: 300px;
+  left: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */
